@@ -1,58 +1,103 @@
-<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Julian</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julian Wingrove - About Me</title>
+  <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
-<header>
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section id="home">
-<div class="Container">
-<img src="images/profile_photo.jpeg" alt="display picture of Julian">
-<h2>My name is Julian</h2>
-</div> 
-</section>
+<body class="bg-stone-100 font-sans">
+  <!-- Header with Headshot -->
+  <header class="bg-amber-800 text-white text-center py-12">
+    <img src="images/headshot.jpg" alt="Julian Wingrove" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+    <h1 class="text-4xl font-bold text-green-200">Julian Wingrove</h1>
+    <p class="text-lg mt-2 text-green-200">Information Security Specialist | Toronto, Canada</p>
+    <p class="mt-2"><a href="https://www.linkedin.com/in/julianwingrove" class="text-green-200 hover:underline">LinkedIn</a></p>
+  </header>
 
-<section id="about">
-<div class="Container">
-<h1>About me</h1>
-<p>I am a tech professional with experience in the following fields:</p>
-<ul>
-<li>Cloud</li>
-<li>Cyber</li>
-<li>Engineering</li>
-</ul>
-</div>
-</section>
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto p-6">
+    <!-- Intro Section -->
+    <section class="text-center py-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">Welcome!</h2>
+      <p class="text-gray-700">Hey there! Welcome to my personal website. I’m Julian. I am an experienced technology professional with a background in engineering, cyber, cloud, and data.</p>
+    </section>
 
-<section id="contact">
-<div class="Container">
-<h1>Contact me</h1>
-<p>You can reach me at any time here:</p>
-<ul>
-<li>julianwingrove@icloud.com</li>
-<li>linkedin.com/in/julianwingrove/</li>
-</ul>
-</div>
-</section>
-</main>
-<footer>
-<p>© Copyright 2024</p>
-</footer>
+    <!-- About Me Section -->
+    <section class="py-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">About Me</h2>
+      <p class="text-gray-700 mb-4">I’m based in Toronto, where I’ve built a career blending engineering with cutting-edge technoloyg. From designing mechanical parts to securing global companies at scale, I thrive on turning challenges into opportunities. Currently, I’m at TD Bank, advising technology teams on data security, but my journey has also taken me through cloud engineering at PwC, cybersecurity strategy, and even big mechanical product launches.</p>
+      <p class="text-gray-700">Outside of work, you’ll find me tinkering with network infrastructure and code, running and excercising, reading, and doing renovations at home. I’m all about balance—tech keeps me sharp, but life’s too short not to enjoy it and learn other skills too!</p>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-8">
+      <h2 class="text-2xl font-semibold text-amber-800 mb-4">Work Experience</h2>
+      <div class="grid grid-cols-1 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-medium text-green-900">TD Bank | Specialist, Information Security</h3>
+          <p class="text-gray-700">• Acted as an internal consultant, providing data security recommendations to over twenty application development teams across the bank, ensuring teams’ digital assets were secure and compliant with banking regulations</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-medium text-green-900">PwC Canada | Senior Consultant, Cloud Engineering</h3>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>• Specialized in application modernization for clients in the banking, telecommunications, and energy production industries, helping improve their IT infrastructure and deployment practices</li>
+            <li>• Designed and developed IT infrastructure solutions with application development teams using agile methodologies in order to best migrate their applications from Azure to GCP</li>
+            <li>• Liaised between project sponsors, stakeholders, and developers to establish strong professional relations and build trust within our organization</li>
+            <li>• Developed and implemented project roadmaps, led key stakeholder accountability, and ensured that project budgets and deadlines were met using tools such as Jira and Microsoft Project</li>
+            <li>• Modernized clients’ applications and IT infrastructure by providing them with cloud-based recommendations and solutions</li>
+            <li>• Produced Dockerfiles, built and tagged images, and effectively managed containers to ensure seamless application deployment and scalability</li>
+            <li>• Implemented Kubernetes within organizations to allow for effective clustering, pod-management, and autoscaling</li>
+            <li>• Wrote Terraform code, ensuring successful deployments to various cloud projects across AWS, Azure, and GCP</li>
+            <li>• Deployed Vault and integrated an external secrets operator to automate secrets ingestion while also leveraging workload identity to ensure that only authorized entities can access the secrets</li>
+            <li>• Automated deployment processes using ArgoCD, enabling seamless and auditable application deployments from version control git repositories</li>
+            <li>• Created Helm Charts to package and version applications in a standardized and repeatable manner, ensuring consistency across development, staging, and production deployments</li>
+            <li>• Enhanced CI/CD pipelines, leading to a more efficient and reliable application delivery and better deployment experience across Jenkins and Harness</li>
+          </ul>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-medium text-green-900">PwC Canada | Consultant, Cyber Security</h3>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>• Focussed on cyber security and privacy strategy for large Canadian energy and utilities companies in order to effectively reduce their organizational risk
+            <li>• Successfully managed 8 projects from a budgeting, timeline, and hours perspective leading to excellent relationships and sustained business from our clients
+            <li>• Managed vendor relations and contract negotiations focussing on cost savings when tracking project expenditures, services, and wages
+            <li>• Strengthened the security posture of organizations by effectively leveraging Splunk and Dynatrace to monitor, detect, and respond to potential threats and anomalies in real-time
+            <li>• Conducted comprehensive risk assessments and vulnerability management activities, identifying potential weaknesses in organizations' systems and recommending appropriate mitigation strategies
+            <li>• Harnessed the power of specialized tools such as Nozomi and Claroty to provide comprehensive protection for our clients' critical ICS and OT environments
+            <li>• Delivered critical projects for large utilities clients with budgets exceeding $250k, focused on helping meet industry standards and regulations, including CSA N290.7-14 and NERC CIP
+            <li>• Acted as a GRC specialist focussing on ISO 27001 and 27002, PCI, defense in depth, CIA triad, and the three lines of defense
+            <li>• Contributed to security awareness training and education initiatives by conducting workshops, empowering employees to recognize and report security threats
+            <li>• Stayed up-to-date with the latest trends and emerging threats in the cybersecurity landscape to ensure that clients remained resilient against evolving cyber threats
+          </ul>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-medium text-green-900">SciCan | Mechanical Engineer</h3>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>• Supervised the end-to-end execution of 2 new products, guiding them from concept ideation to customer launch, ensuring the successful delivery to market
+            <li>• Innovated in a fast-paced R&D manufacturing environment to contribute significantly to day-to-day testing and rapid development of products
+            <li>• Applied engineering best practices, optimized manufacturing processes, streamlined workflows, and reduced production costs to increase manufacturing efficiency and overall product quality
+            <li>• Adhered to industry standards and regulations while ensuring that products met the necessary safety and performance benchmarks allowing the company to build trust with customers and stakeholders
+            <li>• Designed engineering drawings, parts, assemblies, and 3D prints using CAD modeling technologies like SolidWorks, Creo PTC, AutoCAD, and DraftSight, ensuring an accurate product realization
+            <li>• Engaged in training and mentorship activities for junior team members by imparting best practices and sharing industry insights to help drive professional growth within the team
+          </ul>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="text-xl font-medium text-green-900">Ardent Mills | Operations Engineer</h3>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>• Led three process engineering projects with a budget of $150k, ensuring their timely delivery and successful implementation to open up new methods for customer delivery
+            <li>• Managed project efforts closely with cross-functional teams including manufacturing, logistics, and quality control, fostering communication, enabling issue resolution, and ensuring smooth operations
+            <li>• Optimized the manufacturing process, saving over 365 labour hours per year by meticulous analysis of existing practices and process reengineering
+            <li>• Created detailed models, drawings, and diagrams using advanced CAD tools such as SolidWorks and AutoCAD to design parts and assemblies that contractors used to ensure everything was to spec
+            <li>• Established a robust inventory management system using Excel and VBA automation that efficiently monitored product movement from site to site
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-amber-800 text-white text-center py-6">
+    <p>© 2025 Julian Wingrove</p>
+  </footer>
 </body>
-</html>
+</html>' > index.html
